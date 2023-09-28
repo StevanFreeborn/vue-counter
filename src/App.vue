@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 const count = ref(0);
-const increase = () => count.value++;
-const decrease = () => count.value--;
+const increment = () => count.value++;
+const decrement = () => count.value--;
 </script>
 
 <template>
@@ -11,8 +11,8 @@ const decrease = () => count.value--;
       <h4>The current count is...</h4>
       <h1>{{ count }}</h1>
       <div class="button-container">
-        <button @click="decrease">Decrement</button>
-        <button @click="increase">Increment</button>
+        <button @click="decrement">Decrement</button>
+        <button @click="increment">Increment</button>
       </div>
     </div>
   </main>
